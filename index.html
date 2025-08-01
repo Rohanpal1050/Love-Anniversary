@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Animation -->
+    <div class="floating-hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Happy Anniversary My Love</h1>
+            <p class="hero-subtitle">Celebrating our beautiful journey together</p>
+            <div class="countdown-container">
+                <h3>Time Since We Started Our Journey</h3>
+                <div class="countdown" id="timeTogetherCountdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="years">0</span>
+                        <span class="countdown-label">Years</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="months">0</span>
+                        <span class="countdown-label">Months</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1753978226/pplx_project_search_images/d8bb7ca80c821c695e6a0b6a5021ff400b74d919.jpg" alt="Happy Anniversary Heart" class="hero-heart">
+        </div>
+    </section>
+
+    <!-- Love Story Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Our Love Story Timeline</h2>
+            <div class="timeline" id="timeline">
+                <!-- Timeline items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+<section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Memories</h2>
+            <div class="photo-gallery" id="photoGallery">
+                <div class="photo-item" data-image="love.jpg">
+                    <img src="love.jpg" alt="Us Together">
+                    <div class="photo-overlay">
+                        <span>Us Together</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-image="love.jpg">
+                    <img src="love.jpg" alt="Adventure Together">
+                    <div class="photo-overlay">
+                        <span>Our Adventures</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-image="love.jpg">
+                    <img src="love.jpg" alt="Our Journey Map">
+                    <div class="photo-overlay">
+                        <span>Our Journey</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-image="love.jpg">
+                    <img src="love.jpg" alt="Sweet Moments">
+                    <div class="photo-overlay">
+                        <span>Sweet Moments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Digital Love Letter -->
+    <section class="love-letter-section">
+        <div class="container">
+            <div class="love-letter">
+                <div class="letter-decoration">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1752740172/pplx_project_search_images/0b0a07ba473b33160167a336ca3dcd62e06da268.jpg" alt="Love Letter Inspiration" class="letter-bg">
+                </div>
+                <div class="letter-content">
+                    <h2 class="letter-title">My Dearest Love,</h2>
+                    <div class="letter-text" id="letterText">
+                        <p>Every day with you feels like a beautiful dream that I never want to wake up from. From the moment we first met, I knew there was something magical about you that would change my life forever.</p>
+                        
+                        <p>You are my sunshine on cloudy days, my anchor in stormy seas, and my greatest adventure all rolled into one incredible person. The way you laugh at my silly jokes, the way you comfort me when I'm down, and the way you believe in me even when I don't believe in myself - these are the moments that make up the beautiful tapestry of our love.</p>
+                        
+                        <p>Thank you for being patient with my flaws, for celebrating my victories, and for choosing to love me every single day. You've made me a better person, and I can't wait to continue growing old with you, creating more memories, and loving you deeper with each passing year.</p>
+                        
+                        <p>Here's to many more anniversaries, countless more adventures, and a lifetime of being completely and utterly in love with you.</p>
+                    </div>
+                    <div class="letter-signature">
+                        <p>Forever yours,<br><span class="signature">Your Loving Partner ❤️</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Scrapbook -->
+    <section class="memories-section">
+        <div class="container">
+            <h2 class="section-title">Things I Love About You</h2>
+            <div class="memories-grid" id="memoriesGrid">
+                <!-- Memory items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Love Quiz -->
+    <section class="quiz-section">
+        <div class="container">
+            <h2 class="section-title">How Well Do You Know Us? ❤️</h2>
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-question" id="quizQuestion">
+                    <h3 id="questionText"></h3>
+                    <div class="quiz-options" id="quizOptions">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="quiz-result hidden" id="quizResult">
+                    <h3>Amazing! You know us so well! 💕</h3>
+                    <button class="btn btn--primary" onclick="resetQuiz()">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anniversary Countdown -->
+    <section class="next-anniversary-section">
+        <div class="container">
+            <h2 class="section-title">Days Until Our Next Anniversary</h2>
+            <div class="countdown" id="nextAnniversaryCountdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="nextDays">0</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="nextHours">0</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="nextMinutes">0</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="nextSeconds">0</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Photo Gallery -->
+    <div class="modal hidden" id="photoModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
